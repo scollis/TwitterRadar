@@ -19,4 +19,5 @@ else:
     # import subpackages
     from . import plotting
     from . import reduction
+    from . import twitter
 
