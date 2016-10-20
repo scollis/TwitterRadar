@@ -21,4 +21,6 @@ else:
     from . import reduction
     from . import twitter
     from . import aws_tools
+    from . import core
+    from .core import tweet_my_radar
 

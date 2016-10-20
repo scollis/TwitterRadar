@@ -57,7 +57,7 @@ def ngates_above(radar, variable, value):
     ngates: integer
         number of gates above value in radar
     """
-    positions = np.where(my_radar.fields[variable]['data'] > value)
+    positions = np.where(radar.fields[variable]['data'] > value)
     n_gates = len(positions[0])
     return n_gates
 

@@ -7,6 +7,7 @@ def configuration(parent_package='', top_path=None):
     config.add_subpackage('reduction')
     config.add_subpackage('twitter')
     config.add_subpackage('aws_tools')
+    config.add_subpackage('core')
 
     return config
 
