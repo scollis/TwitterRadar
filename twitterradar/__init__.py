@@ -20,4 +20,5 @@ else:
     from . import plotting
     from . import reduction
     from . import twitter
+    from . import aws_tools
 
