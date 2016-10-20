@@ -13,7 +13,7 @@ WARNING: Could break if Amazon ceases to host NEXRAD data
 
 """
 
-import pyart.io.read as read_radar
+from  pyart.io.auto_read import read as read_radar
 from boto.s3.connection import S3Connection
 from datetime import timedelta, datetime
 import tempfile
