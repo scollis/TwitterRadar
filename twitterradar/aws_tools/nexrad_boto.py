@@ -64,8 +64,8 @@ def get_radar_from_aws(site, datetime_t):
     for i in range(len(bucket_list)):
         this_str = str(bucket_list[i].key)
         if 'gz' in this_str:
-            endme = this_str[-22:-3]
-            fmt = '%Y%m%d_%H%M%S_V06'
+            endme = this_str[-22:-4]
+            fmt = '%Y%m%d_%H%M%S_V0'
             dt = datetime.strptime(endme, fmt)
             datetimes.append(dt)
             keys.append(bucket_list[i])
