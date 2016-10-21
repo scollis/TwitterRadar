@@ -73,7 +73,7 @@ def tweet_my_radar(site, tapi, datetime_string, fmat = '%Y%m%d_%H%M%S',
         minm, maxm = min_max(my_radar, 'reflectivity')
         z40 = ngates_above(my_radar,  'reflectivity', 40.)
         z20 =  ngates_above(my_radar,  'reflectivity', 20.)
-        gdata = "There are {0} gates above 20dBZ and {1} above 40dBZ".format(z20,
+        gdata = " {0} gates above 20 {1} above 40dBZ".format(z20,
                 z40)
         mmdata = "The min Z is {0}dBZ and the max is {1}dBZ".format(minm,
                                                              maxm)
